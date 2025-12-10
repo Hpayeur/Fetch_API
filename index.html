@@ -7,7 +7,14 @@
 </head>
 <body>
     <!-- Inspect this document -->
-     
-   <!-- https://iskarr.github.io/austindonovan.github.io/api/business.json -->
+     <script>
+        const URL = 'https://iskarr.github.io/austindonovan.github.io/api/business.json';
+        console.log('Fetching data from:', URL);
+fetch(URL)
+.then((response) => response.json())
+.then((jsObject) => {
+console.log(jsObject);
+});
+     </script>
 </body>
 </html>
